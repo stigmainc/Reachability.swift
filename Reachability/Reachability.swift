@@ -159,7 +159,7 @@ public extension Reachability {
         }
         
         // Perform an initial check
-        reachabilitySerialQueue.async {
+        DispatchQueue.main.async {
             self.reachabilityChanged()
         }
         
